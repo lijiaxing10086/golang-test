@@ -1,4 +1,5 @@
 #第三次作业
+http-deployment.yaml中包含全量的yaml，含service和ingress
 ##优雅启动
 当前通过readinessProbe对健康检查接口进行可读性检查，确保其ready后及是可接受流量的状态，检查的成功、失败次数等设置采用默认配置即可，不做额外修改
 ```YAML
@@ -108,5 +109,7 @@ $ openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout ${KEY_FILE} -out $
 
 kubectl create secret tls ${CERT_NAME} --key ${KEY_FILE} --cert ${CERT_FILE}
 ```
-2. 在nginx-ingress-controller的启动参数中制定默认证书的secret
+2. 在nginx-ingress-controller的启动参数中指定默认证书的secret
 --default-ssl-certificate secretname
+
+当然ingress上也可指定后端service所使用的证书，单本次作业中没有使用
