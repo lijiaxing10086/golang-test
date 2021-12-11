@@ -22,12 +22,12 @@
 
 3. 在prometheus的界面中查询延时指标数据
 
-![prometheus查询延时指标数据](images\prometheus.png)
+![prometheus查询延时指标数据](https://github.com/lijiaxing10086/golang-test/blob/main/classwork4/images/prometheus.png)
 
 
 
-![grafana查询延时指标数据](images\grafana.png)
+![grafana查询延时指标数据](https://github.com/lijiaxing10086/golang-test/blob/main/classwork4/images/grafana.png)
 
 4. 使用Grafana创建一个DashBoard来展示延时分配情况
 
-![grafana-DashBoard](images\grafana-dashboard.png)
+![grafana-DashBoard](https://github.com/lijiaxing10086/golang-test/blob/main/classwork4/images/grafana-dashboard.png)
